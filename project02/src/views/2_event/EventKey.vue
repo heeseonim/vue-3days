@@ -11,7 +11,7 @@
         id="tel2"
         v-move="[4, 'tel3']"
       />
-      <input type="text" maxlength="4" id="tel3" v-model="tel3" />
+      <input type="text" maxlength="4" v-model="tel3" id="tel3" />
     </div>
   </div>
 </template>
@@ -50,8 +50,7 @@ export default {
       if (event.keyCode === 13) {
         this.doSearch()
       }
-
-      // console.log(evetn.keyCode)
+      // console.log(event.keyCode)
     }
   }
 }

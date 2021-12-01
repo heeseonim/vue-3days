@@ -103,7 +103,7 @@ td {
 
 th,
 td {
-  border: 1px solid #223;
+  border: 1px solid #222;
   padding: 10px;
 }
 </style>

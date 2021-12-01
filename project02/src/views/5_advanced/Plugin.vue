@@ -1,7 +1,8 @@
 <template>
   <div>
-    <button @click="increaseCounter">Add 1</button>
-    <p>The counter is : {{ counter }}</p>
+    <h1>{{ $translate('ko.hi', user) }}</h1>
+    <h1>{{ $translate('en.hi') }}</h1>
+    <button>{{ $translate('ko.search') }}</button>
   </div>
 </template>
 <script>
@@ -10,17 +11,13 @@ export default {
   components: {},
   data() {
     return {
-      counter: 0
+      user: { name: '승원', phone: '010-0000-0000' }
     }
   },
   setup() {},
   created() {},
   mounted() {},
   unmounted() {},
-  methods: {
-    increaseCounter() {
-      this.counter += 1
-    }
-  }
+  methods: {}
 }
 </script>
